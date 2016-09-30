@@ -82,3 +82,9 @@ select fod.post_order_id, #
  group by fod.post_order_id,po.partner_id) rst 
 where rst.financial_type_min=1001 order by order_status;
 END 
+
+
+ALTER TABLE `firstlink`.`user_recommend_url` 
+ADD COLUMN `instorage_time` TIMESTAMP NULL AFTER `status`;
+ALTER TABLE `firstlink`.`user_recommend_url` 
+ADD COLUMN `completed_time` TIMESTAMP NULL AFTER `status`;
