@@ -4,11 +4,6 @@ CREATE PROCEDURE `pdt_daily_financial_order_report`(
 BEGIN
 DECLARE date_today,date_yestoday datetime;
 
-SET date_today = date_add(rpt_date, INTERVAL 0 DAY);
-SET date_yestoday = date_add(rpt_date, INTERVAL -1 DAY);
-
-select date_today,date_yestoday,rpt_date;
-
 delete from financial_order_report where day=date_yestoday;
 
 insert into `financial_order_report` 
