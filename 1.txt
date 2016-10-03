@@ -88,3 +88,4 @@ ALTER TABLE `firstlink`.`user_recommend_url`
 ADD COLUMN `instorage_time` TIMESTAMP NULL AFTER `status`;
 ALTER TABLE `firstlink`.`user_recommend_url` 
 ADD COLUMN `completed_time` TIMESTAMP NULL AFTER `status`;
+分支1
